@@ -1,0 +1,29 @@
+.container{
+    margin: 8px;
+}
+
+#userInputContainer{
+    display: flex;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    border: 2px solid black;
+    width: 464px;
+}
+
+.row{
+
+}
+
+.column{
+
+}
+
+.colorDiv{
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+}

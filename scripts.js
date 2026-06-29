@@ -3,11 +3,20 @@ function generateSquares(num){
     container.textContent = "";
 
     if(typeof(num) == "number"){
-        for(let i = 0; i < num * num; i++){
-            let newSquare = document.createElement("div");
-            newSquare.className = "colorDiv"
-            container.appendChild(newSquare);
+        for(let i = 0; i < num; i++){
+            let row = document.createElement("div");
+            row.className = "row";
+            container.appendChild(row);
+
         }
+        let rows = document.querySelectorAll(".row");      
+        rows.forEach((d) => {
+            for(let j = 0; j < num; j++){
+                let col = document.createElement("div");
+                col.className = "col";
+                d.insertAdjacentElement("afterbegin", col);
+            }
+        })
     }
 
     else{
@@ -19,7 +28,7 @@ function generateSquares(num){
 
 
 function hoverListener(){
-    let elements = document.querySelectorAll(".colorDiv")
+    let elements = document.querySelectorAll(".col")
     
     for (let i = 0; i < elements.length; i++){
         elements[i].addEventListener("mouseover", () => { 

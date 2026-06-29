@@ -8,18 +8,23 @@
 
 #container{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
     align-content: flex-start;
     border: 2px solid black;
     width: 464px;
 }
 
 .row{
-
+    display: flex;
+    height: 30px;
+    border: 2px solid black;   
 }
 
-.column{
-
+.col{
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;   
 }
 
 .colorDiv{

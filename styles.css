@@ -4,31 +4,26 @@
 
 #userInputContainer{
     display: flex;
+    gap: 20px;
 }
 
 #container{
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    align-content: flex-start;
     border: 2px solid black;
     width: 464px;
+    height: 464px;
 }
 
 .row{
     display: flex;
+    flex-grow: 1;
     height: 30px;
-    border: 2px solid black;   
+    margin: 0;
+
 }
 
 .col{
-    width: 25px;
-    height: 25px;
-    border: 2px solid black;   
+    flex-grow: 1;
 }
 
-.colorDiv{
-    width: 25px;
-    height: 25px;
-    border: 2px solid black;
-}
